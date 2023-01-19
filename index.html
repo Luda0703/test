@@ -10,26 +10,35 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="">
 </head>
 <body>
    <!-- SWIPER -->
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./images/slirer.jpg"  />
+    <section>
+      <div class="container-slider">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/slirer.jpg"  />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/slider-1.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/slider-2.jpg"  />
+            </div>
           </div>
-          <div class="swiper-slide">
-            <img src="./images/slider-1.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/slider-2.jpg"  />
-          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+    
       </div>
-  
+    </section>
       <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
       <script>
         var swiper = new Swiper(".mySwiper", {
@@ -38,13 +47,45 @@
           navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
+            
           },
           pagination: {
             el: ".swiper-pagination",
             clickable: true,
           },
+
+          //keyboard: {
+            //enabled: true,
+            //onlyInViewport: true,
+            //pageUpDown: true,
+          //}
+
+          mousewheel: {
+            sensitivity: 1,
+            loop: false,
+            loopedSlides: 0,
+            freeMode: true,
+            speed: 800,
+          },
+
+          effect: 'flip',
+
+          flipEffect: {
+            slideShadows: true,
+            limitRotation: true,
+
+          },
+
+
+
+
+        
+
         });
       </script>
+
+      
+
 
 </body>
 </html>
