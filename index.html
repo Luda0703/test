@@ -25,7 +25,7 @@
    </section>
     <section>
       <div class="container-slider">
-        <div class="swiper mySwiper">
+        <div class="swiper image-slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img src="./images/slirer.jpg"  />
@@ -91,11 +91,50 @@
             clickable: true,
           },
 
+          keyboard: {
+            enabled: true,
+            onlyInViewport: true,
+            pageUpDown: true,
+          },
+
+          speed: 500,
+
+          //mousewheel: {
+            //sensitivity: 1,
+            //loop: false,
+           // loopedSlides: 0,
+           // freeMode: true,
+            
+         // },
+
+          //effect: 'flip',
+
+          //flipEffect: {
+            //slideShadows: true,
+            //limitRotation: true,
+
+          //},
+        });
+      </script>
+      <script>
+        new Swiper(".image-slider", {
+          spaceBetween: 30,
+          effect: "fade",
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            
+          },
+          //pagination: {
+           // el: ".swiper-pagination",
+           // clickable: true,
+          //},
+
           //keyboard: {
             //enabled: true,
-            //onlyInViewport: true,
+           // onlyInViewport: true,
             //pageUpDown: true,
-          //}
+         // },
 
           mousewheel: {
             sensitivity: 1,
@@ -105,6 +144,10 @@
             speed: 800,
           },
 
+          speed: 1000,
+
+          loop: true,
+
           effect: 'flip',
 
           flipEffect: {
@@ -112,12 +155,6 @@
             limitRotation: true,
 
           },
-
-
-
-
-        
-
         });
       </script>
 
