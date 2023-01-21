@@ -1,22 +1,79 @@
 
-.container {
+/*.container {
     margin-left: auto;
     margin-right: auto;
     width: 1195px;
     height: 400px;
     background-color: #84A178;
-
-}
+}*/
 
 .container-slider {
-    margin-left: auto;
-    margin-right: auto;
     position: relative;
-
-    width: 1195px;
-    height: 1097px;
-    background-image: url(../images/Backgroud_desktop.jpg);
 }
+
+@media screen and (min-width: 480px) {
+    .container-slider {
+        width: 320px;
+        height: 1110px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container-slider {
+        background-image: url(../images/Backgroud_mobile.jpg);
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px ),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .container-slider {
+        background-image: url(../images/Backgroud_mobile@2x.jpg);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container-slider {
+        width: 768px;
+        height: 1017px;
+        
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .container-slider {
+        background-image: url(../images/Background_tablet.jpg);
+    }
+    
+
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    .container-slider {
+        background-image: url(../images/Background_tablet@2x.jpg);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container-slider {
+        width: 1195px;
+        height: 1053px;
+        padding-bottom: 228px;
+        background-image: url(../images/Backgroud_desktop.jpg);
+    }
+
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+    .container-slider {
+        background-image: url(../images/Backgroud_desktop@2x.jpg);
+    }
+}
+
+
 
 html,
 body {
@@ -32,6 +89,8 @@ body {
     margin: 0;
     padding: 0;
 }
+
+
 
 .swiper {
     position: absolute;
@@ -51,7 +110,7 @@ body {
 .swiper-slide img {
     display: block;
     width: 100%;
-    border-radius: 24px;
+    
 }
 
 .swiper-button-next::after,
@@ -59,17 +118,70 @@ body {
     color: transparent;
 }
 
+@media screen and (min-width: 480px) {
+    .swiper {
+        max-width: 440px;
+        max-height: 204px;
+    }
+
+    .swiper-slide img {
+        border-radius: 8px;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1194px) {
+    .swiper {
+        max-width: 704px;
+        max-height: 327px;
+    }
+
+    .swiper-slide img {
+        border-radius: 18px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .swiper {
+        max-width: 1013px;
+        max-height: 433px;
+    }
+
+    .swiper-slide img {
+        border-radius: 24px;
+    }
+}
+
 /* SLIDER */
+
+@media screen and (min-width: 480px) {
+    .slider {
+        margin-bottom: 80px;
+        max-width: 280px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1194px) {
+    .slider {
+        margin-bottom: 100px;
+        max-width: 705px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .slider {
+        margin-top: 140px;
+        max-width: 968px;
+
+    }
+}
 
 .slider {
     background-color: transparent;
-    margin-top: 140px;
-    max-width: 968px;
     position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-   
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
 }
 
 .slider-img {
@@ -118,4 +230,6 @@ body {
     font-size: 14px;
     background-color: #84A178;
 }
+
+
 
