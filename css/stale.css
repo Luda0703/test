@@ -28,6 +28,7 @@
     height: 1037px;
     
     background-image: url(../images/Backgroud_desktop.jpg);
+   
 }
 
 .container-slider {
@@ -158,6 +159,11 @@ body {
 }
 
 .swiper-slide {
+    position: relative;
+    margin: 0 auto;   
+    width: 100%;    
+    overflow: hidden;  
+    
     
     background-position: center;
     background-size: cover;
@@ -257,7 +263,7 @@ body {
     text-align: center;
     color: #131313;
     margin-bottom: 32px;
-    background-color: #FCFCFC;
+    
 }
 
 
