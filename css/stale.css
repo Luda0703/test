@@ -15,34 +15,40 @@
 
 /* SLIDER-1 */
 
-/*.section-slider {     
-    background-image: linear-gradient(
+  
+@media screen and (max-width: 767px) {
+    .section-slider {     
+        background-image: linear-gradient(
+            to bottom,
+            #84A178 10%,
+            transparent 10%
+        );
+
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .section-slider {
+        background-image: linear-gradient(
         to bottom,
-        $main-background-color 10%,
-        transparent 10%
+        #84A178 42%,
+        transparent 42%
     );
-
-    padding-bottom: 80px;   
-
-    @media screen and (min-width: 768px) {
-        background-image: linear-gradient(
-            to bottom,
-            $main-background-color 42%,
-            transparent 42%
-        );
-        padding-bottom: 60px;
     }
+}    
 
-    @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+    .section-slider {
         background-image: linear-gradient(
-            to bottom,
-            $main-background-color 17%,
-            transparent 17%
-        );
-        padding-bottom: 128px;
+        to bottom,
+        #84A178 17%,
+        transparent 17%
+    );
     }
-}*/
-
+}    
 
 .container-swiper-slider {
     position: absolute;
@@ -52,8 +58,7 @@
     width: 100%;
     height: 1037px;
     max-width: 1440px;
-    background-image: url(../images/Backgroud_desktop.jpg);
-   
+    background-image: url(../images/Backgroud_desktop.jpg); 
 }
 
 .container-slider {
@@ -61,28 +66,21 @@
     position: relative;
     padding-left: 0;
       padding-right: 0;
-      width: 100%;
+     
 }
 
 .container-swiper {
-    
     position: relative;
-    padding-left: 15px;
-      padding-right: 15px;
-      width: 100%;
+    
 }
 
 @media screen and (min-width: 480px) {
     .container-slider {
-        
-        width: 440px;
         margin-left: auto;
         margin-right: auto;  
     }
 
     .container-swiper {
-       
-        width: 440px;
         margin-left: auto;
         margin-right: auto; 
     }
@@ -111,13 +109,9 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 @media screen and (min-width: 768px) {
     .container-slider {
         margin-bottom: 100px;
-        width: 768px;
+       
     }
 
-    .container-swiper {
-        
-        width: 768px;
-    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -138,20 +132,13 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 
 @media screen and (min-width: 1200px) {
     .container-swiper-slider {
-        
         height: 1054px;
         background-image: url(../images/Backgroud_desktop.jpg);
     }
 
 
     .container-slider {
-        margin-bottom: 140px;
-        width: 1195px;  
-    }
-
-    .container-swiper {
-        
-        width: 1195px;
+        margin-bottom: 140px; 
     }
 
 }
@@ -232,11 +219,6 @@ body {
     .swiper-slide img {
         border-radius: 8px;
     }
-
-    /*.gallery-img {
-        max-width: 440px;
-        width: 100%;
-    }*/
     
 }
 
@@ -250,11 +232,6 @@ body {
     .swiper-slide img {
         border-radius: 18px;
     }
-
-    /*.gallery-img {
-        max-width: 704px;
-        width: 100%;
-    }*/
 }
 
 @media screen and (min-width: 1200px) {
@@ -265,14 +242,8 @@ body {
     }
 
     .swiper-slide img {
-        
         border-radius: 24px;
     }
-
-    /*.gallery-img {
-        max-width: 1013px;
-        width: 100%;
-    }*/
 }
 
 /* SLIDER 2*/
@@ -289,6 +260,8 @@ body {
 
 @media screen and (max-width: 767px) {
     .section-swiper {
+        padding-left: 15px;
+        padding-right: 15px;
         padding-bottom: 60px;
     }
 }
@@ -340,7 +313,7 @@ body {
 }
 
 .swiper-text {
-    display: block;
+    
    margin-left: auto;
    margin-right: auto;
     font-family: 'Montserrat', sans-serif;
@@ -351,7 +324,7 @@ body {
     text-align: center;
     margin-bottom: 32px;
     width: 100%;
-    width: 968px;
+    
 }
 
 
@@ -368,7 +341,8 @@ body {
     
 @media screen and (min-width: 768px) {
     .swiper-text {
-        width: 705px;
+        width: 100%;
+        max-width: 705px;
          padding: 29px 80px;
         font-size: 14px;
         font-weight: 500;
@@ -382,7 +356,7 @@ body {
         padding: 43px 109px;
         font-size: 16px;
         border-radius: 24px;
-        
+        width: 968px;
     }  
     
 }
@@ -390,7 +364,6 @@ body {
 .slider-text {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.86;
     text-align: center;
     color: #131313; 
@@ -402,9 +375,14 @@ body {
     }
 }
 
+@media screen and (min-width: 767px) {
+    .slider-text {
+        font-size: 16px;
+    }
+}
+
 
 .mySwiper .swiper-pagination-bullet {
-   
     width: 15px;
     height: 15px;
     line-height: 20px;
