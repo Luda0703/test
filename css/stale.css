@@ -270,12 +270,14 @@ body {
 @media screen and (max-width: 767px) {
     .slider {
         max-width: 280px; 
+        padding-bottom: 12px;
     }
 }
 
 @media screen and (min-width: 768px) {
     .slider {
         max-width: 704px;
+        padding-bottom: 32px;
     }
 
 }
@@ -283,6 +285,7 @@ body {
 @media screen and (min-width: 1200px) {
     .slider {
         max-width: 968px; 
+        
     }
 }
 
@@ -354,24 +357,21 @@ body {
     line-height: 1.86;
     text-align: center;
     color: #131313; 
-    
+    margin-top: 0;
 }
 
 @media screen and (max-width: 767px) {
     .slider-text {
         font-size: 20px;
-        margin-top: 0;
-        margin-bottom: 12px ;
     }
 }
 
 @media screen and (min-width: 767px) {
     .slider-text {
-        font-size: 16px;
-        margin-top: 0;
-        margin-bottom: 32px;
+        font-size: 16px;  
     }
 }
+
 
 
 .mySwiper .swiper-pagination-bullet {
