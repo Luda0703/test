@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../Coll"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "test"
+	}
+}

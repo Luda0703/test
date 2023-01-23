@@ -26,6 +26,7 @@
 
         padding-left: 15px;
         padding-right: 15px;
+        padding-bottom: 80px;
     }
 
 }
@@ -40,6 +41,7 @@
 
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 100px;
     }
 
 }    
@@ -54,6 +56,8 @@
 
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 140px;
+
     }
 }    
 
@@ -64,21 +68,16 @@
     background-size: cover;
     width: 100%;
     height: 1037px;
-   
+    
     background-image: url(../images/Backgroud_desktop.jpg); 
 }
 
 .container-slider {
-    
     position: relative;
-    padding-left: 0;
-      padding-right: 0;
-     
 }
 
 .container-swiper {
-    position: relative;
-    
+    position: relative; 
 }
 
 @media screen and (min-width: 480px) {
@@ -99,9 +98,9 @@
         background-image: url(../images/Backgroud_mobile.jpg);
     }
 
+
     .container-slider {
         margin-bottom: 80px;
-
     }
 }
 
@@ -113,22 +112,12 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     }
 }
 
-@media screen and (min-width: 768px) {
-    .container-slider {
-        margin-bottom: 100px;
-       
-    }
-
-}
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .container-swiper-slider {
-        
         height: 990px;
         background-image: url(../images/Background_tablet.jpg);
     }
-    
-
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -141,11 +130,6 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .container-swiper-slider {
         height: 1054px;
         background-image: url(../images/Backgroud_desktop.jpg);
-    }
-
-
-    .container-slider {
-        margin-bottom: 140px; 
     }
 
 }
@@ -275,12 +259,16 @@ body {
 
 @media screen and (min-width: 768px) {
     .section-swiper {
+        padding-left: 15px;
+        padding-right: 15px;
         padding-bottom: 192px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .section-swiper {
+        padding-left: 15px;
+        padding-right: 15px;
         padding-bottom: 123px;
     }
 }
@@ -296,23 +284,23 @@ body {
 
 @media screen and (max-width: 767px) {
     .slider {
-        max-width: 440px;
-        padding-bottom: 12px; 
+        max-width: 280px;
+        padding-bottom: 12px;
     }
 }
 
 @media screen and (min-width: 768px) {
     .slider {
-        
         max-width: 704px;
-        padding-bottom: 32px;
+       padding-bottom: 32px;
     }
+
 }
 
 @media screen and (min-width: 1200px) {
     .slider {
         max-width: 968px;
-        padding-bottom: 32px;
+        
     }
 }
 
@@ -342,20 +330,21 @@ body {
     background-color: #84A178;
     color: #FCFCFC;
     text-align: center;
-    margin-bottom: 32px;   
-    
+    margin-bottom: 32px;  
+    margin-top: 0;  
 }
 
 
 
 @media screen and (max-width: 767px) {
     .swiper-text {
-       
         font-size: 12px;
         line-height: 2.55;
         padding: 35px 39px;
          border-radius: 10px;
+         
     }
+
 }
     
 @media screen and (min-width: 768px) {
@@ -367,6 +356,7 @@ body {
         line-height: 1.86;
          border-radius: 24px;
     }   
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -385,6 +375,7 @@ body {
     line-height: 1.86;
     text-align: center;
     color: #131313; 
+    margin: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -396,6 +387,7 @@ body {
 @media screen and (min-width: 767px) {
     .slider-text {
         font-size: 16px;
+     
     }
 }
 
