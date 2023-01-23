@@ -57,7 +57,6 @@
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 140px;
-
     }
 }    
 
@@ -68,7 +67,6 @@
     background-size: cover;
     width: 100%;
     height: 1037px;
-    
     background-image: url(../images/Backgroud_desktop.jpg); 
 }
 
@@ -161,9 +159,6 @@ body {
 
 .swiper {
     position: absolute;
-    /*top: 100%;
-    left: 42%;
-    transform: translate(-50% );*/
     max-width: 1013px;
     max-height: 433px;
     border: transparent;
@@ -239,16 +234,6 @@ body {
 
 /* SLIDER 2*/
 
-/*.slider {
-    background-color: transparent;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50% ); 
-}*/
-
-
-
 @media screen and (max-width: 767px) {
     .section-swiper {
         padding-left: 15px;
@@ -284,23 +269,20 @@ body {
 
 @media screen and (max-width: 767px) {
     .slider {
-        max-width: 280px;
-       
+        max-width: 280px; 
     }
 }
 
 @media screen and (min-width: 768px) {
     .slider {
         max-width: 704px;
-       
     }
 
 }
 
 @media screen and (min-width: 1200px) {
     .slider {
-        max-width: 968px;
-        
+        max-width: 968px; 
     }
 }
 
@@ -341,15 +323,13 @@ body {
         font-size: 12px;
         line-height: 2.55;
         padding: 35px 39px;
-         border-radius: 10px;
-         
+         border-radius: 10px;   
     }
 
 }
     
 @media screen and (min-width: 768px) {
     .swiper-text {
-        
          padding: 29px 80px;
         font-size: 14px;
         font-weight: 500;
@@ -364,7 +344,6 @@ body {
         padding: 43px 109px;
         font-size: 16px;
         border-radius: 24px;
-        
     }  
     
 }
@@ -391,7 +370,6 @@ body {
         font-size: 16px;
         margin-top: 0;
         margin-bottom: 32px;
-     
     }
 }
 
